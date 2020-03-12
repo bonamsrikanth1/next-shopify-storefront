@@ -1,4 +1,4 @@
-import { createSlice } from 'redux-starter-kit';
+import { createSlice } from '@reduxjs/toolkit';
 import { CheckoutFragment } from '../models';
 
 export interface CheckoutState {
@@ -21,7 +21,7 @@ const initialState = {
 };
 
 export default createSlice({
-  slice: 'checkout',
+  name: 'checkout',
   initialState,
   reducers: {
     getRequest: () => {

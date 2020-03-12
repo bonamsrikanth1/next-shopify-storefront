@@ -1,4 +1,5 @@
-import { combineReducers, configureStore, Store } from 'redux-starter-kit';
+import { useSelector as useReduxSelector, TypedUseSelectorHook } from 'react-redux';
+import { combineReducers, configureStore, Store } from '@reduxjs/toolkit';
 import checkout from './checkout.slice';
 import product from './product.slice';
 import products from './products.slice';
@@ -21,3 +22,6 @@ export function createStore(initialState = {}): Store {
     preloadedState: initialState
   });
 }
+
+export type RootState = ReturnType<typeof rootReducer>;
+export const useSelector: TypedUseSelectorHook<RootState> = useReduxSelector;

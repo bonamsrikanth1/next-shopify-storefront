@@ -5,7 +5,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { createStyles, Theme, makeStyles, useTheme } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import TextField from '@material-ui/core/TextField';
@@ -16,6 +16,7 @@ import React from 'react';
 import services from '../../services';
 import { CheckoutState } from '../../store/checkout.slice';
 import withLayout from '../../hocs/withLayout';
+import { useSelector } from '../../store/index';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
