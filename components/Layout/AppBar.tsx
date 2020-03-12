@@ -12,7 +12,7 @@ import Menu from '@material-ui/core/Menu';
 import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import utilities from '../../utilities';
-import { useSelector } from 'react-redux';
+import { useSelector } from '../../store/index';
 
 const useStyles = makeStyles(theme => ({
   grow: {

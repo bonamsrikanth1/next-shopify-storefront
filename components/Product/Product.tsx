@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
 import withLayout from '../../hocs/withLayout';
 import { ProductState } from '../../store/product.slice';
@@ -10,7 +10,7 @@ import QuantityInput from './QuantityInput';
 import { makeStyles, Theme, useTheme } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@material-ui/core/Button';
-
+import { useSelector } from '../../store/index';
 const useStyles = makeStyles((them: Theme) => ({
   title: {
     margin: 0

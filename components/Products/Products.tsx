@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import Head from 'next/head';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
@@ -17,6 +17,7 @@ import Search from './Search';
 import { ProductSortKeys } from '../../models';
 import utilities from '../../utilities';
 import { ProductsState } from '../../store/products.slice';
+import { useSelector } from '../../store/index';
 
 interface Props {
   query: {
